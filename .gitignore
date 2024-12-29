@@ -1,0 +1,30 @@
+# Excluir arquivos que frequentemente armazenam variáveis sensíveis
+.env
+*.env
+*.env.*
+
+# Excluir arquivos de configuração contendo propriedades sensíveis
+application.properties
+application.yml
+docker-compose.override.yml
+
+# Ignorar cache e configurações locais do IntelliJ IDEA
+.idea/
+*.iml
+
+# Ignorar arquivos de build do Java (Maven ou Gradle)
+target/
+build/
+
+# Logs de execução
+*.log
+
+# Ignorar receitas de CI/CD que podem conter informações sensíveis
+*.yml
+!ci-example.yml  # Mantenha apenas arquivos de exemplo
+
+# Outros arquivos temporários ou desnecessários
+*.class
+*.jar
+*.war
+*.ear
